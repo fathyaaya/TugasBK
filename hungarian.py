@@ -187,9 +187,9 @@ with tab1:
   # -- Value 0: No
   # -- Value 1: Yes
 
-  oldpeak = st.sidebar.number_input(label=":white[**ST depression induced by exercise relative to rest**]", min_value=df_final['oldpeak'].min(), max_value=df_final['oldpeak'].max())
-  st.sidebar.write(f":orange[Min] value: :orange[**{df_final['oldpeak'].min()}**], :red[Max] value: :red[**{df_final['oldpeak'].max()}**]")
-  st.sidebar.write("")
+  oldpeak = st.sider(label=":violet[**ST depression induced by exercise relative to rest**]", min_value=df_final['oldpeak'].min(), max_value=df_final['oldpeak'].max())
+  st.sider(f":orange[Min] value: :orange[**{df_final['oldpeak'].min()}**], :red[Max] value: :red[**{df_final['oldpeak'].max()}**]")
+  st.sider("")
 
   data = {
     'Age': age,
